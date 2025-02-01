@@ -1,44 +1,25 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the beauty and culture of Sri Lanka with Tour Lanka. Discover breathtaking landscapes, rich history, and vibrant traditions.">
+    <meta name="description" content="Explore the beauty and culture of Sri Lanka with Tour Lanka.">
     <meta name="keywords" content="Sri Lanka, Tour Lanka, travel, tourism, vacation">
     <meta name="author" content="Tour Lanka">
     <title>Tour Lanka - Explore Sri Lanka's Wonders</title>
-    
     <link rel="stylesheet" href="styles.css">
-
-     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Footer</title>
-  <link rel="stylesheet" href="styles.css">
-
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourslanka Footer</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Lanka</title>
-    
     <style>
         /* Global Styles */
-        
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-
         body {
             background-color: #f5f5f5;
         }
-
+        
         /* Header Styles */
         header {
             background: rgba(0, 0, 0, 0.8);
@@ -46,286 +27,99 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-
         .logo img {
-            width: 120px;
-            height: auto;
+            width: 100px;
         }
-
+        
         nav ul {
             list-style: none;
             display: flex;
         }
-
         nav ul li {
             margin: 0 15px;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 18px;
-            transition: 0.3s;
         }
-
-        nav ul li a:hover {
-            color: #f8c43c;
+        
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                display: none;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .menu-toggle {
+                display: block;
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
         }
-
-          /* Image Section */
-    #twenty-four-seven {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 40px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .image-container {
-        width: 100%;
-        max-width: 1000px;
-    }
-
-    .responsive-image {
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    }
-        .overlay-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        
+        /* Image Section */
+        .image-container {
             text-align: center;
-            color: #fff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-top: 80px;
         }
-
-        .overlay-text h1 {
-            font-size: 3rem;
-        }
-
-        .overlay-text p {
-            font-size: 1.2rem;
-        }
-
-        section {
-            padding: 40px 20px;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .destination-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .destination {
-            border: 1px solid #ddd;
+        .responsive-image {
+            width: 100%;
+            max-width: 1000px;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 10px;
         }
-
-        .destination img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        form label {
-            font-weight: bold;
-        }
-
-        form input, form textarea, form button {
-            width: 100%;
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        form button {
-            background-color: #007BFF;
-            color: #fff;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        form button:hover {
-            background-color: #0056b3;
-        }
-       
-
+        
+        /* Footer */
         footer {
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 20px;
-            background-color: #f8f8f8;
-            border-top: 1px solid #ddd;
+            margin-top: 20px;
         }
-        footer {
-  background-color: #333; /* Dark background color */
-  color: #fff; /* Light text color */
-  padding: 40px 20px; /* Adjust padding as needed */
-  font-family: 'Arial', sans-serif; /* Use a clean, readable font */
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
-  justify-content: space-around; /* Distribute columns evenly */
-  max-width: 1200px; /* Set a maximum width for larger screens */
-  margin: 0 auto; /* Center the content */
-}
-
-.footer-column {
-  flex: 1 1 250px; /* Each column takes up roughly 1/4 of the space */
-  margin-bottom: 20px; /* Add spacing between columns */
-}
-
-.footer-column h4 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #FFCC00; /* Gold color for headings */
-}
-
-.footer-column p, .footer-column ul {
-  font-size: 0.9em;
-  line-height: 1.6;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column li {
-  margin-bottom: 5px;
-}
-
-.footer-column a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-column input[type="email"] {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 4px;
-}
-
-.footer-column button {
-  background-color: #FFCC00; /* Gold color for the button */
-  color: #333;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.social-icons {
-  display: flex;
-}
-
-.social-icons a {
-  margin-right: 10px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 20px;
-  background-color: #000; /* Darker background for the bottom bar */
-  margin-top: 20px;
-}
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .footer-container {
-        grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
-    }
-
-    .footer-bottom {
-        grid-template-columns: 3fr; /* Single column for bottom section */
-    }
-
-    .footer-info img {
-        max-width: 150px;
-    }
-
-    .footer-social img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .footer-copyright img {
-        max-width: 70px;
-    }
-}
-
-
+        
+        /* Responsive Footer */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
-
-<body style="background-color: #f5f5f5;">
+<body>
     <header>
         <div class="logo">
             <img src="https://i.pinimg.com/736x/40/4b/6a/404b6ab19c9b152d3950d156045f3303.jpg" alt="Tour Lanka Logo">
         </div>
-        
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
-                <li><a href="Packages">Packages</a></li>
+                <li><a href="#packages">Packages</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="twenty-four-seven">
-        <div class="image-container">
-            <img src="https://t4.ftcdn.net/jpg/02/90/79/53/360_F_290795351_i0kJX32HPEdjTgK1iSjaDjTb9MN3qk4O.jpg" 
-                 alt="Sri Lanka" class="responsive-image">
-        </div>
+  <section class="image-container">
+        <img src="https://t4.ftcdn.net/jpg/02/90/79/53/360_F_290795351_i0kJX32HPEdjTgK1iSjaDjTb9MN3qk4O.jpg" 
+             alt="Sri Lanka" class="responsive-image">
     </section>
 
     
@@ -538,6 +332,17 @@
         <div class="footer-bottom">
           <p>&copy; 2025 Tour Lanka pvt ( Ltd ). All Rights Reserved.</p>
         </div>
+
+          <footer>
+        <p>&copy; 2025 Tour Lanka Pvt Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
       </footer>
 </section>
 </body>
