@@ -1,15 +1,40 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the beauty and culture of Sri Lanka with Tour Lanka.">
+    <meta name="description" content="Explore the beauty and culture of Sri Lanka with Tour Lanka. Discover breathtaking landscapes, rich history, and vibrant traditions.">
     <meta name="keywords" content="Sri Lanka, Tour Lanka, travel, tourism, vacation">
     <meta name="author" content="Tour Lanka">
     <title>Tour Lanka - Explore Sri Lanka's Wonders</title>
+    
     <link rel="stylesheet" href="styles.css">
+
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Footer</title>
+  <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourslanka Footer</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Lanka</title>
+    
     <style>
         /* Global Styles */
+        body {
+            background-color: #f5f5f5; /* Fallback background color */
+            background-image: url('https://i.ytimg.com/vi/G09F9S1zWwM/maxresdefault.jpg'); /* Background image URL */
+            background-size: cover; /* Make the image cover the entire screen */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Fixed image during scroll */
+        }
+
+        
         * {
             margin: 0;
             padding: 0;
@@ -28,7 +53,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
         }
 
         .logo img {
@@ -56,104 +80,258 @@
             color: #f8c43c;
         }
 
-        /* Responsive Navigation */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            nav ul {
-                flex-direction: column;
-                padding-top: 10px;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-        }
+          /* Image Section */
+    #twenty-four-seven {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        /* Image Section */
-        #twenty-four-seven {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+    .image-container {
+        width: 100%;
+        max-width: 1000px;
+    }
 
-        .image-container img {
-            width: 100%;
-            max-width: 1000px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 40px 20px;
+    .responsive-image {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            max-width: 1200px;
-            margin: 0 auto;
+        .overlay-text h1 {
+            font-size: 3rem;
         }
 
-        .footer-column {
-            flex: 1 1 250px;
+        .overlay-text p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
 
-        .footer-column h4 {
-            color: #FFCC00;
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
-        .social-icons {
+        .destination {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .social-icons a {
-            margin: 0 10px;
+        form label {
+            font-weight: bold;
         }
 
-        .social-icons img {
-            width: 30px;
-            height: 30px;
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
 
-        /* Responsive Footer */
-        @media (max-width: 768px) {
-            .footer-content {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+        form button {
+            background-color: #007BFF;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+       
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+        }
+        footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 40px 20px; /* Adjust padding as needed */
+  font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  justify-content: space-around; /* Distribute columns evenly */
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center the content */
+}
+
+.footer-column {
+  flex: 1 1 250px; /* Each column takes up roughly 1/4 of the space */
+  margin-bottom: 20px; /* Add spacing between columns */
+}
+
+.footer-column h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #FFCC00; /* Gold color for headings */
+}
+
+.footer-column p, .footer-column ul {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-column button {
+  background-color: #FFCC00; /* Gold color for the button */
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #000; /* Darker background for the bottom bar */
+  margin-top: 20px;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+    }
+
+    .footer-bottom {
+        grid-template-columns: 3fr; /* Single column for bottom section */
+    }
+
+    .footer-info img {
+        max-width: 150px;
+    }
+
+    .footer-social img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-copyright img {
+        max-width: 70px;
+    }
+}
+
+
     </style>
 </head>
-<body>
+
+<body style="background-color: #f5f5f5;">
     <header>
         <div class="logo">
-            <img src="logo.jpg" alt="Tour Lanka Logo">
+            <img src="https://i.pinimg.com/736x/40/4b/6a/404b6ab19c9b152d3950d156045f3303.jpg" alt="Tour Lanka Logo">
         </div>
+        
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
+                <li><a href="Packages">Packages</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-
     <section id="twenty-four-seven">
         <div class="image-container">
-            <img src="sri-lanka.jpg" alt="Sri Lanka">
+            <img src="https://t4.ftcdn.net/jpg/02/90/79/53/360_F_290795351_i0kJX32HPEdjTgK1iSjaDjTb9MN3qk4O.jpg" 
+                 alt="Sri Lanka" class="responsive-image">
         </div>
     </section>
 
@@ -321,33 +499,55 @@
  
 
 
-  <footer>
+    <footer>
         <div class="footer-content">
-            <div class="footer-column">
-                <h4>Contact Us</h4>
-                <p>Tour Lanka Vacations (Pvt) Ltd, Kelaniya, Sri Lanka.</p>
-                <p>Phone: +94 74 149 1220</p>
-                <p>Email: <a href="mailto:tourlanka@gmail.com">tourlanka@gmail.com</a></p>
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>
+              Tour lanka Vacations (Pvt) Ltd,<br>
+              No 53/2 Eksathmawatha , Sinharamulla,<br>
+              Kelaniya,<br>
+              Sri Lanka.
+            </p>
+            <p>
+              <img src="path/to/phone-icon.png" alt="Phone"> +94 74 149 1220/+94 77 686 3374<br>
+              <img src="path/to/email-icon.png" alt="Email"> <a href="tourlankaadvantures@gmail.com">tourlankaadvantures@gmail.com</a>
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Transport</a></li>
+              <li><a href="#">Ceylon Visa</a></li>
+              <li><a href="#">Inquiries</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Newsletter Subscription</h4>
+            <p>Get the latest news and travel tips.</p>
+            <form>
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons" justify-content: center;>
+                <a href="https://www.facebook.com/"><img src="https://i.postimg.cc/fbswT2rC/pngwing-com-2.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/_tour_lanka_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="https://i.postimg.cc/sDBfnZWY/pngwing-com-1.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/"><img src="https://i.postimg.cc/1R75cK8R/pngwing-com.png" alt="Tiktok"></a>
             </div>
-            <div class="footer-column">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
-                </div>
-            </div>
+          </div>
         </div>
-        <p>&copy; 2025 Tour Lanka. All Rights Reserved.</p>
-    </footer>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tour Lanka pvt ( Ltd ). All Rights Reserved.</p>
+        </div>
+      </footer>
+</section>
 </body>
+
 </html>
 
