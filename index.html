@@ -398,10 +398,34 @@
         </nav>
     </header>
 
-     <div class="container">
-        <h2>Embedded Presentation</h2>
-        <iframe src="https://www.slideshare.net/slideshow/embed_code/key/3iBBJSn8ilRest?hostedIn=slideshare&page=upload"></iframe>
+    <div class="video-container">
+        <video id="bgVideo" autoplay loop muted>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <button class="btn" onclick="toggleVideo()">Pause Video</button>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            var video = document.getElementById("bgVideo");
+            var button = document.querySelector(".btn");
+
+            if (video.paused) {
+                video.play();
+                button.textContent = "Pause Video";
+            } else {
+                video.pause();
+                button.textContent = "Play Video";
+            }
+        }
+    </script>
 
     <section class="destinations-section">
         <h2>Top Destinations</h2>
