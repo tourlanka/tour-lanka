@@ -441,33 +441,36 @@
         </nav>
     </header>
 
-    <div class="video-container">
-        <iframe allow="fullscreen; autoplay" allowfullscreen src="https://streamable.com/e/dl00xc?autoplay=1&nocontrols=1"></iframe>
-    </div>
+    <section>
 
-    <!-- Content section (appears on top of video) -->
-    <div class="content">
-        <h1>Welcome to Our Website</h1>
-        <p>Scroll down for more!</p>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator">
-        <a href="#content">↓ Scroll Down</a>
-    </div>
-
-    <script>
-        // Scroll listener to keep video at top when scrolling
-        window.onscroll = function() {
-            var videoContainer = document.querySelector('.video-container');
-            if (window.scrollY > 0) {
-                videoContainer.style.position = 'absolute';
-                videoContainer.style.top = window.scrollY + 'px';
-            } else {
-                videoContainer.style.position = 'fixed';
-                videoContainer.style.top = 0;
+        <div class="video-container">
+            <iframe allow="fullscreen; autoplay" allowfullscreen src="https://streamable.com/e/dl00xc?autoplay=1&nocontrols=1"></iframe>
+        </div>
+    
+        <!-- Content section (appears on top of video) -->
+        <div class="content">
+            <h1>Welcome to Our Website</h1>
+            <p>Scroll down for more!</p>
+        </div>
+    
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <a href="#content">↓ Scroll Down</a>
+        </div>
+    
+        <script>
+            // Scroll listener to keep video at top when scrolling
+            window.onscroll = function() {
+                var videoContainer = document.querySelector('.video-container');
+                if (window.scrollY > 0) {
+                    videoContainer.style.position = 'absolute';
+                    videoContainer.style.top = window.scrollY + 'px';
+                } else {
+                    videoContainer.style.position = 'fixed';
+                    videoContainer.style.top = 0;
+                }
             }
-        }
+    </section>
 
     <section class="destinations-section">
         <h2>Top Destinations</h2>
